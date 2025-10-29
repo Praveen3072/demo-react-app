@@ -40,3 +40,10 @@
 .read-the-docs {
   color: #888;
 }
+
+.tab-menu {
+  display: flex;
+  list-style: none;
+  gap: 1rem; /* Adds space between buttons */
+  justify-content: flex-start; /* Aligns buttons to left */
+}
