@@ -1,10 +1,10 @@
-function Demo(props)
+function Demo({name,id})
 {
     return(
         <div>
-            <h1>Hello is from another Component</h1>
-            <h4>{props.title}</h4>
-            <h4>{props.description}</h4>
+            <h3>Hello is from another Component</h3>
+            <h4>{name}</h4>
+            <h4>{id}</h4>
         </div>
     )
 }

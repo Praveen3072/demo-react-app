@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Demo from './Demo'
 import './App.css'
+import { Concepts } from './data'
 
 function App() {
   const [count, setCount] = useState(2)
@@ -15,7 +16,12 @@ function App() {
         <h1>count: {count}</h1>
         <button onClick={increment}>Increase</button>
         <button onClick={decrement}>Decrease</button>
-        <Demo title="How to use Props" description="This provide deails on how to use props"></Demo>
+        <Demo name = {Concepts[0].name}
+              id = {Concepts[0].id}
+        />
+        <Demo {...Concepts[1]}/>
+        <Demo {...Concepts[2]}/>
+        <Demo {...Concepts[3]}/>
       </div>
     </>
   )
