@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import Demo from './Demo'
+import Demo from './components/Demo'
 import './App.css'
-import { Concepts } from './data'
+import { Concepts } from './data/data.js'
 
 function App() {
   const [count, setCount] = useState(2)
