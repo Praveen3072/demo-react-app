@@ -23,7 +23,7 @@ export default function Examples(){
     return(
         <>
                 <Section title="Examples" className="section-tab"> 
-                  <Tab className="tab-menu" buttons={<>
+                  <Tab buttonsContainer = "menu" className="tab-menu" buttons={<>
                     <TabButton isSelected = {selectedTopic==='components'} onSelect={()=>handleClick('components')}>Components</TabButton>
                     <TabButton isSelected = {selectedTopic==='jsx'} onSelect={()=>handleClick('jsx')}>JSX</TabButton>
                     <TabButton isSelected = {selectedTopic==='Props'} onSelect={()=>handleClick('Props')}>Props</TabButton>
