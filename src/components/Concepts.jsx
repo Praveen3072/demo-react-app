@@ -1,12 +1,13 @@
 import Demo from './Demo.jsx'
 import { Users } from '../data/data.js';
+import '../App.css'
 export default function Concepts(){
     return(
         <>
         <h3>User Details</h3>
-        <div className="tab-menu">
-        <ul className="tab-menu">
-          {Users.map((item)=>(<Demo key={item.name}{...item}/>))}
+        <div>
+        <ul className="user-list">
+          <li>{Users.map((item)=>(<Demo key={item.name}{...item}/>))}</li>
         </ul>
         </div>
         </>

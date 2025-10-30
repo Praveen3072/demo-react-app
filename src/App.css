@@ -47,3 +47,46 @@
   gap: 1rem; /* Adds space between buttons */
   justify-content: flex-start; /* Aligns buttons to left */
 }
+
+.section-tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 48px;
+  padding: 32px 0;
+  background: rgba(30, 30, 30, 0.98);
+  border-radius: 18px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12), 0 1.5px 4px rgba(0,0,0,0.05);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.user-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 32px auto;
+  max-width: 540px;
+}
+
+.user-list li {
+  background: #23272f;
+  color: #fff;
+  margin: 12px 0;
+  padding: 18px 24px;
+  border-radius: 12px;
+  font-size: 1.08rem;
+  font-weight: 500;
+  box-shadow: 0 2px 12px rgba(44,60,84,0.08);
+  transition: background 0.18s, transform 0.14s;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.user-list li:hover {
+  background: #294cff;
+  color: #fff;
+  transform: scale(1.03);
+  box-shadow: 0 4px 16px rgba(41,76,255,0.08);
+}
