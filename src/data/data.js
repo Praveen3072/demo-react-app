@@ -1,4 +1,4 @@
-export const Concepts = [
+export const Users = [
     {
         name: "praveen",
         id: "1982"
@@ -17,7 +17,7 @@ export const Concepts = [
     }
 ];
 
-export const Examples = {
+export const Topics= {
     components: {
         name: "components",
         id: "123"
