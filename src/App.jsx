@@ -23,17 +23,19 @@ function App() {
 
   return (
       <div>
-        <Demo name = {Concepts[0].name}
-              id = {Concepts[0].id}
-        />
-        <Demo {...Concepts[1]}/>
+        <h3>User Details</h3>
+        <div className="tab-menu">
+        <ul className="tab-menu">
+          {Concepts.map((item)=>(<Demo key={item.name}{...item}/>))}
+        </ul>
+        </div>
         <section>
           <h3>Examples</h3>
           <menu className="tab-menu">
-            <TabButton onSelect={()=>handleClick('components')}>Components</TabButton>
-            <TabButton onSelect={()=>handleClick('jsx')}>JSX</TabButton>
-            <TabButton onSelect={()=>handleClick('Props')}>Props</TabButton>
-            <TabButton onSelect={()=>handleClick('State')}>State</TabButton>
+            <TabButton isSelected = {selectedTopic==='components'} onSelect={()=>handleClick('components')}>Components</TabButton>
+            <TabButton isSelected = {selectedTopic==='jsx'} onSelect={()=>handleClick('jsx')}>JSX</TabButton>
+            <TabButton isSelected = {selectedTopic==='Props'} onSelect={()=>handleClick('Props')}>Props</TabButton>
+            <TabButton isSelected = {selectedTopic==='State'} onSelect={()=>handleClick('State')}>State</TabButton>
           </menu>
           {selectedTopic}
         </section>
