@@ -16,3 +16,22 @@ export const Concepts = [
         id: "131995"
     }
 ];
+
+export const Examples = {
+    components: {
+        name: "components",
+        id: "123"
+    },
+    jsx:{
+        name:"jsx",
+        id: "345"
+    },
+    Props: {
+        name:"props",
+        id:"567"
+    },
+    State:{
+        name:"state",
+        id:"897"
+    }
+}
